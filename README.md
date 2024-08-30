@@ -59,49 +59,39 @@ The timer counts up as long as the input is TRUE and resets when the input turns
 
  
 # Procedure:
-Setup the PLC Programming Environment:
+#### Setup the PLC Programming Environment:
 
 Connect the PLC to the computer and launch the PLC programming software.
 Ensure all input and output devices are connected to the PLC’s I/O modules.
-Create Ladder Logic for Timers:
+
+#### Create Ladder Logic for Timers:
 
 Implement the ON-delay timer (TON) by creating a rung with an input (e.g., a push button) linked to a TON instruction. Set the preset time (e.g., 5 seconds).
 Implement the OFF-delay timer (TOF) by creating a rung with an input linked to a TOF instruction. Set the preset time (e.g., 5 seconds).
 Implement the Retentive Timer (RTO) by creating a rung with an input linked to an RTO instruction. Set the preset time and enable an additional rung to reset the timer when required.
-Simulate the Ladder Logic:
+#### Simulate the Ladder Logic:
 
 Run the simulation in the PLC software.
 Test the ON-delay timer by pressing the input button and observing the delay before the output is activated.
 Test the OFF-delay timer by deactivating the input and observing the delay before the output turns off.
 Test the Retentive Timer by toggling the input on and off, observing how the accumulated time is retained.
-Download and Execute:
+#### Download and Execute:
 
 Download the ladder logic program to the PLC if available and run it.
 Test the timers with the physical push buttons and observe the LEDs or other output devices.
 #   Outputs:
 ON-Delay Timer: The output LED or indicator should turn on after a specified delay (e.g., 6 seconds) once the input is activated.
-![Screenshot 2024-08-30 093234](https://github.com/user-attachments/assets/8e66eaee-2370-4d86-868f-bd745ba68c70)
 
 OFF-Delay Timer: The output should remain on for the specified delay after the input is deactivated, and then it should turn off.
-![Screenshot 2024-08-30 093140](https://github.com/user-attachments/assets/cf1915b3-4a77-4330-90d8-4a7f763fc75c)
 
 Retentive Timer: The output should turn on after the accumulated time reaches the preset value, and it should retain the accumulated time even if the input is turned off.
 
 
-# Simulation Screenshots 
-
-
-
-
-
-
-
-
-
-
-
-
-
+# Simulation Screenshots:
+### ON-Delay Timer:
+![Screenshot 2024-08-30 093234](https://github.com/user-attachments/assets/8e66eaee-2370-4d86-868f-bd745ba68c70)
+### OFF-Delay Timer:
+![Screenshot 2024-08-30 093140](https://github.com/user-attachments/assets/cf1915b3-4a77-4330-90d8-4a7f763fc75c)
 
 
 # Results:
